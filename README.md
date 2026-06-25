@@ -1,12 +1,25 @@
 # Intelligems MCP Skills
 
-Intelligems MCP Skills is an open package of Agent Skills that teach AI agents how to work with Intelligems, the ecommerce experimentation, personalization, and price-testing platform. Each skill is a ready-made workflow your agent can follow to analyze tests, inspect audience segments, study pricing response, and build reporting with the Intelligems MCP server and External API.
+Open Agent Skills for [Intelligems](https://www.intelligems.io/), the ecommerce experimentation, personalization, and price-testing platform. Give your AI agent a proven workflow instead of writing prompts from scratch.
 
-It is built for developers, agencies, and ecommerce teams who want their AI assistant to do real analysis: read test results, catch tests where conversion gains hide profit loss, run client performance reviews, and plan testing roadmaps without writing those prompts from scratch each time.
+Built for connected operators and ecommerce teams who want agents to:
 
-Install a skill with one command, connect your own Intelligems account, and your agent follows the workflow. The skills supply the method; you bring the data.
+- Analyze test results and surface what actually moved.
+- Catch profit traps where conversion gains hide margin loss.
+- Review client or program performance without rebuilding prompts.
+- Study segments, pricing response, and testing roadmaps.
 
-This repository holds only public instructions and references. It includes no API keys, account tokens, or customer data, and the skills lead with read-only calls so your agent reads and reports before it changes anything.
+How it works:
+
+- Install a skill with one command.
+- Connect your own Intelligems account.
+- Your agent runs the workflow through the MCP server or External API.
+- The skills supply the method; you bring the data.
+
+Data safety:
+
+- Public instructions only, no API keys, tokens, or customer data.
+- Skills start read-only, so your agent reads and reports before changing anything.
 
 ## What's Inside
 
