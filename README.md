@@ -1,12 +1,14 @@
 # Intelligems MCP Skills
 
-Source-backed Agent Skills for working with the Intelligems MCP server and External API.
+Intelligems MCP Skills is an open package of Agent Skills that teach AI agents how to work with Intelligems, the ecommerce experimentation, personalization, and price-testing platform. Each skill is a ready-made workflow your agent can follow to analyze tests, inspect audience segments, study pricing response, and build reporting with the Intelligems MCP server and External API.
 
-Use these skills to help compatible AI agents analyze tests, inspect audience segments, build reporting workflows, and stay inside safe approval boundaries.
+It is built for developers, agencies, and ecommerce teams who want their AI assistant to do real analysis: read test results, catch tests where conversion gains hide profit loss, run client performance reviews, and plan testing roadmaps without writing those prompts from scratch each time.
 
-These skills are public instructions and references. They do not include API keys, MCP tokens, customer exports, store data, order data, or private brand information.
+Install a skill with one command, connect your own Intelligems account, and your agent follows the workflow. The skills supply the method; you bring the data.
 
-## Contents
+This repository holds only public instructions and references. It includes no API keys, account tokens, or customer data, and the skills lead with read-only calls so your agent reads and reports before it changes anything.
+
+## What's Inside
 
 - `skills/mcp-context` - shared context for the hosted Intelligems MCP server.
 - `skills/profit-growth-audit` - profit-focused audit flow, linked to the official public audit repo.
@@ -86,14 +88,14 @@ https://ai.intelligems.io/mcp/sse
 
 Vercel also documents how to host MCP servers, but this repository is not an MCP server deployment. Intelligems already hosts the MCP server. This repository is a skill package that can be installed by agents.
 
-## Distribution
+## Updates & Sharing
 
 - Install from GitHub with `npx skills add intelligems-io/intelligems-mcp-skills`.
 - No npm token or registry publishing step is required.
 - There is no separate skills.sh publish command. Public repositories can become discoverable as people install them through the skills CLI.
 - See `DISTRIBUTION.md` for installation, update, and optional marketplace notes.
 
-## Source Discipline
+## References
 
 The skill instructions are grounded in these public resources:
 
@@ -107,9 +109,11 @@ The skill instructions are grounded in these public resources:
 - Claude Code skill docs: https://code.claude.com/docs/en/skills
 - Codex Agent Skills docs: https://developers.openai.com/codex/skills
 
-## Safety
+## Data & Security
 
-Do not commit API keys, access tokens, customer data exports, order-level exports, presigned download URLs, screenshots with secrets, or private brand data. Skills should prefer read-only MCP and API calls first. Creating, updating, starting, pausing, ending, or exporting an Intelligems experience requires explicit approval for that exact action.
+Skills lead with read-only MCP and API calls. Creating, updating, starting, pausing, ending, or exporting an Intelligems experience requires explicit approval for that exact action.
+
+For contributors: do not commit API keys, access tokens, customer data exports, order-level exports, presigned download URLs, screenshots with secrets, or private brand data.
 
 The validation script checks skill format plus common secret and private-context patterns:
 
